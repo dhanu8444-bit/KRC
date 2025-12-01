@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KRC Curry Leaves | Fresh, Dry & Curry Leaf Powder & Mint Leaves & Coriander</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="KRC Curry Leaves - Fresh raw curry leaves, premium dry curry leaves,aromatic curry leaf powder,green Coriander,mint and dry mint leaves directly from farm to your kitchen."
+  />
+  <style>
+    :root {
+      --primary: #1b5e20;
+      --primary-light: #2e7d32;
+      --accent: #ffca28;
+      --bg: #f5f7f5;
+      --text: #222222;
+      --muted: #666666;
+      --white: #ffffff;
+      --max-width: 1100px;
+      --radius-lg: 18px;
+      --radius-xl: 26px;
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Layout utilities */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    section {
+      padding: 4.5rem 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.8rem 1.6rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease,
+        background 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: var(--white);
+      box-shadow: 0 10px 25px rgba(27, 94, 32, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(27, 94, 32, 0.4);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(27, 94, 32, 0.25);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      transform: translateY(-1px);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(27, 94, 32, 0.06);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(245, 247, 245, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 0.8rem 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    .logo-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 30% 20%, #a5d6a7 0, #1b5e20 55%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 800;
+      font-size: 1.1rem;
+      box-shadow: 0 8px 20px rgba(27, 94, 32, 0.4);
+    }
+
+    .logo-text-main {
+      font-weight: 800;
+      font-size: 1.5rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .logo-text-sub {
+      font-size: 0.7rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.3rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding-bottom: 0.1rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.16s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+      background: rgba(27, 94, 32, 0.1);
+      border-radius: 6px;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(27, 94, 32, 0.15);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .nav-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 3.75rem 0 4.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: 2.4rem;
+      line-height: 1.2;
+      margin: 1rem 0 0.5rem;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-highlight {
+      color: var(--primary);
+    }
+
+    .hero-subtitle {
+      color: var(--muted);
+      max-width: 30rem;
+      font-size: 0.98rem;
+    }
+
+    .hero-cta {
+      margin-top: 1.7rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      align-items: center;
+    }
+
+    .hero-meta {
+      margin-top: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .hero-meta strong {
+      color: var(--primary);
+      font-size: 0.9rem;
+    }
+
+    .hero-image-card {
+      background: radial-gradient(circle at top left, #e8f5e9 0, #ffffff 40%);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-soft);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-leaf {
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      border-radius: 55px;
+      background: radial-gradient(circle at 30% 20%, #a5d6a7 0, #1b5e20 55%);
+      top: -25px;
+      right: -15px;
+      opacity: 0.75;
+      filter: blur(0.3px);
+    }
+
+    .hero-image-main {
+      border-radius: 18px;
+      background: linear-gradient(120deg, #e8f5e9, #fff);
+      padding: 1.3rem;
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .hero-image-main-inner {
+      border-radius: 16px;
+      background: radial-gradient(circle at 20% 10%, #c8e6c9 0, #1b5e20 60%);
+      padding: 0.9rem;
+      color: var(--white);
+      font-size: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 180px;
+    }
+
+    .hero-image-main-inner h3 {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.4rem;
+    }
+
+    .hero-tag {
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 0.15rem 0.55rem;
+      font-size: 0.7rem;
+    }
+
+    .hero-note {
+      margin-top: 0.6rem;
+      font-size: 0.75rem;
+      opacity: 0.9;
+    }
+
+    .hero-side-list {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: grid;
+      gap: 0.4rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 999px;
+      background: rgba(27, 94, 32, 0.06);
+      font-size: 0.75rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .hero-badge span {
+      font-size: 1rem;
+    }
+    
+    .hero-images {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .image-slider {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+    }
+
+    .image-slider img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Section headings */
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-eyebrow {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-eyebrow {
+      font-size: 1.2rem;
+      animation: slideInLeft 1s ease-out;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 34rem;
+      margin: 0 auto;
+    }
+
+    .about-content {
+      max-width: 50rem;
+      margin: 0 auto;
+      font-size: 0.95rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .clients-list {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
+      flex-wrap: wrap;
+    }
+
+    /* Products */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.6rem;
+    }
+
+    .product-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 1.2rem 1.3rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-tag {
+      position: absolute;
+      top: 1.1rem;
+      right: 1.1rem;
+      background: rgba(255, 202, 40, 0.12);
+      border-radius: 999px;
+      padding: 0.15rem 0.6rem;
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #8d6e00;
+    }
+
+    .product-name {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .product-desc {
+      font-size: 0.83rem;
+      color: var(--muted);
+    }
+
+    .product-meta {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.8rem;
+    }
+
+    .product-price {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .product-unit {
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+
+    .product-cta {
+      margin-top: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      margin-top: 0.3rem;
+    }
+
+    .chip {
+      font-size: 0.7rem;
+      padding: 0.12rem 0.5rem;
+      border-radius: 999px;
+      background: rgba(27, 94, 32, 0.06);
+      color: var(--primary);
+    }
+
+    /* Benefits */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.3rem;
+    }
+
+    .benefit-card {
+      background: #f0f4f1;
+      border-radius: var(--radius-lg);
+      padding: 1.1rem 1.2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .benefit-title {
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      color: var(--primary);
+      font-size: 0.9rem;
+    }
+
+    /* Process */
+    .process-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .steps {
+      display: grid;
+      gap: 0.9rem;
+      font-size: 0.85rem;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      background: rgba(27, 94, 32, 0.09);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 0.1rem;
+      color: var(--text);
+    }
+
+    .process-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      padding: 1.3rem;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.85rem;
+    }
+
+    .process-list {
+      margin-top: 0.6rem;
+      padding-left: 1.1rem;
+      color: var(--muted);
+    }
+
+    .process-list li {
+      margin-bottom: 0.25rem;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background: #ffffff;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.4rem;
+    }
+
+    .testimonial-card {
+      background: #f7faf8;
+      border-radius: var(--radius-lg);
+      padding: 1.2rem 1.1rem;
+      font-size: 0.85rem;
+    }
+
+    .testimonial-quote {
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 0.85rem;
+    }
+
+    .testimonial-role {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .contact-form-card {
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      padding: 1.5rem 1.4rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .field-group {
+      display: grid;
+      gap: 0.25rem;
+    }
+
+    .field-group label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .field-group input,
+    .field-group textarea,
+    .field-group select {
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 0.6rem 0.7rem;
+      font-size: 0.85rem;
+      font-family: inherit;
+      resize: vertical;
+    }
+
+    .field-group input:focus,
+    .field-group textarea:focus,
+    .field-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 1px rgba(27, 94, 32, 0.2);
+    }
+
+    .contact-details {
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .contact-details strong {
+      color: var(--primary);
+    }
+
+    .contact-info-item {
+      display: grid;
+      gap: 0.1rem;
+    }
+
+    .contact-highlight {
+      margin-top: 0.6rem;
+      padding: 0.7rem 0.8rem;
+      border-radius: 10px;
+      background: rgba(27, 94, 32, 0.06);
+      font-size: 0.8rem;
+      color: var(--primary);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 1.2rem 0 1.8rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 2px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-float a {
+      background: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.2s ease;
+      animation: spark 2s infinite;
+    }
+
+    .whatsapp-float a:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes spark {
+      0% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+      50% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8), 0 0 20px rgba(37, 211, 102, 0.4);
+      }
+      100% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 920px) {
+      .hero-grid,
+      .process-grid,
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-image-card {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .products-grid,
+      .benefits-grid,
+      .testimonials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .nav-links.open,
+      .nav-cta.open {
+        display: flex;
+      }
+
+      .nav {
+        flex-wrap: wrap;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 0.6rem;
+      }
+
+      .nav-cta {
+        width: 100%;
+        justify-content: flex-start;
+        padding-bottom: 0.4rem;
+      }
+
+      .hero-title {
+        font-size: 1.85rem;
+      }
+
+      section {
+        padding: 3.2rem 0;
+      }
+
+      .products-grid,
+      .benefits-grid,
+      .testimonials-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="#top" class="logo">
+          <div class="logo-icon">C</div>
+          <div>
+            <div class="logo-text-main">KRC</div>
+            <div class="logo-text-sub">Curry Leaves</div>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+          ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#process">Our Process</a>
+          <a href="#clients">Clients</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-cta" id="navCta">
+          <span style="font-size: 0.75rem; color: var(--muted)">
+            Wholesale & Retail
+          </span>
+          <a href="#contact" class="btn btn-primary" style="padding: 0.55rem 1rem;">
+            Enquire Now
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="image-slider">
+        <img src="curryleaf.jpeg" alt="Curry Leaves">
+        <img src="../Desktop/dryleaves.jpeg" alt="Dry Leaves">
+        <img src="../Desktop/curryleafpoweder.jpeg" alt="Curry Leaf Powder">
+        <img src="../Desktop/curryleaffruits.jpeg" alt="Curry Leaf Powder">
+        <img src="../Desktop/coriander.jpeg" alt="Coriander">
+        <img src="mint.jpg" alt="Mint Leaves">
+
+      </div>
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">
+            <span class="badge-dot"></span>
+            KRC – Farm Fresh Curry Leaves,Coriander and Mint
+          </div>
+          <h1 class="hero-title">
+            Pure <span class="hero-highlight">Curry Leaf Goodness</span><br />
+            from Farm <span class="hero-highlight">to Kitchen</span>.
+          </h1>
+          <p class="hero-subtitle">
+            KRC brings you hand-picked
+            <strong>raw curry leaves</strong>, naturally
+            <strong>dried leaves</strong> and aromatic
+            <strong>curry leaf powder</strong>
+                        <strong>coriander</strong> and aromatic
+. No colours, no
+            preservatives – just authentic flavour and nutrition.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#products" class="btn btn-primary">View Products</a>
+            <a href="#contact" class="btn btn-outline">Get a Price List</a>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <strong>Same-day dispatch*</strong><br />
+        <!-- <div class="hero-images">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Murraya_koenigii_leaves.jpg/220px-Murraya_koenigii_leaves.jpg" alt="Curry Leaves" style="width: 200px; height: auto; border-radius: 10px;">
+          <img src="https://cdn.britannica.com/70/234870-050-D4D024BB/green-leaves-Murraya-koenigii-tree.jpg" alt="Fresh Curry Leaves" style="width: 200px; height: auto; border-radius: 10px;">
+        </div> -->
+               We are able to supply till 20 tons per day and we are able to deliver within 24 hours with our own transport facilities are available. For confirmed local orders before 11 AM.
+            </div>
+            <div>
+              <strong>Bulk & Retail Orders</strong><br />
+              Suitable for markets,shops,masala manufacturing industries hotels & exporters.
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-card">
+          <div class="hero-leaf"></div>
+          <div class="hero-image-main">
+            <div class="hero-image-main-inner">
+              <div>
+                <h3>KRC Premium Curry Leaves</h3>
+                <p>Freshly harvested, shade-dried & hygienically packed.</p>
+                <div class="hero-tags">
+                  <span class="hero-tag">Raw Leaves</span>
+                  <span class="hero-tag">Dry Leaves</span>
+                  <span class="hero-tag">Leaf Powder</span>
+                </div>
+              </div>
+              <p class="hero-note">
+                Ideal for sambar, rasam, chutneys, spice blends & health mixes.
+              </p>
+            </div>
+            <div class="hero-side-list">
+              <div class="hero-badge">
+                <span>✔</span>
+                100% Natural, Chemical-Free
+              </div>
+              <div>• Cleaned & sorted before packing</div>
+              <div>• Customized packaging for wholesalers</div>
+              <div>• Long shelf-life dry leaves & powder</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Our Products</div>
+          <h2 class="section-title">Fresh Herbs & Specialty Products</h2>
+          <p class="section-subtitle">
+            KRC specialises in fresh curry leaves, coriander, mint and value-added products
+            suitable for households, hotels, masala manufacturers and exporters.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Raw Curry Leaves -->
+          <article class="product-card">
+            <div class="product-tag">Best Seller</div>
+            <h3 class="product-name">Raw Fresh Curry Leaves</h3>
+            <p class="product-desc">
+              Hand-picked, washed and neatly bundled fresh curry leaves with
+              strong aroma and deep green colour. Ideal for everyday cooking.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Same-day harvest</span>
+              <span class="chip">Cleaned & sorted</span>
+              <span class="chip">Local delivery</span>
+            </div>
+            <div class="product-meta">
+              <div>
+                <div class="product-price">₹ — / kg</div>
+                <div class="product-unit">(Update with your price)</div>
+              </div>
+              <div class="product-unit">MOQ: 5 kg (Wholesale negotiable)</div>
+            </div>
+            <div class="product-cta">
+              <a href="#contact" class="btn btn-outline" style="padding: 0.45rem 0.9rem;">
+                Enquire for Fresh Stock
+              </a>
+              <span style="font-size: 0.75rem; color: var(--muted);">
+                Available for hotels, caterers & traders.
+              </span>
+            </div>
+          </article>
+
+          <!-- Dry Curry Leaves -->
+          <article class="product-card">
+            <div class="product-tag">Long Shelf-life</div>
+            <h3 class="product-name">Dry Curry Leaves</h3>
+            <p class="product-desc">
+              Naturally shade-dried leaves that retain aroma and nutrients.
+              Perfect for spice blends, instant mixes and off-season use.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Sun-dried</span>
+              <span class="chip">Preserves aroma & greenery</span>
+              <span class="chip">Low moisture</span>
+              <span class="chip">Ideal for masala units</span>
+            </div>
+            <div class="product-meta">
+              <div>
+                <div class="product-price">₹ — / kg</div>
+                <div class="product-unit">(Update with your price)</div>
+              </div>
+              <div class="product-unit">Packaging: 250g / 500g / 1kg</div>
+            </div>
+            <div class="product-cta">
+              <a href="#contact" class="btn btn-outline" style="padding: 0.45rem 0.9rem;">
+                Request Bulk Quote
+              </a>
+              <span style="font-size: 0.75rem; color: var(--muted);">
+                Custom packs for private label available.
+              </span>
+            </div>
+          </article>
+
+          <!-- Curry Leaf Powder -->
+          <article class="product-card">
+            <div class="product-tag">Value Added</div>
+            <h3 class="product-name">Curry Leaf Powder</h3>
+            <p class="product-desc">
+              Finely ground from premium dry leaves. Rich in iron and
+              antioxidants. Use in podis, health mixes, seasoning & chutneys.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Fine / coarse grind</span>
+              <span class="chip">No added salt</span>
+              <span class="chip">Private labelling</span>
+            </div>
+            <div class="product-meta">
+              <div>
+                <div class="product-price">₹ — / kg</div>
+                <div class="product-unit">(Update with your price)</div>
+              </div>
+              <div class="product-unit">Packaging: 100g, 250g, 500g</div>
+            </div>
+            <div class="product-cta">
+              <a href="#contact" class="btn btn-outline" style="padding: 0.45rem 0.9rem;">
+                Share Your Requirement
+              </a>
+              <span style="font-size: 0.75rem; color: var(--muted);">
+                Ideal for health brands & spice makers.
+              </span>
+            </div>
+          </article>
+
+          <!-- Curry Leaf Fruits & Seeds -->
+          <article class="product-card">
+            <div class="product-tag">Specialty</div>
+            <h3 class="product-name">Curry Leaf Fruits & Seeds</h3>
+            <p class="product-desc">
+              Fresh curry leaf fruits and seeds, harvested at peak ripeness.
+              Used in traditional remedies, oils, and for propagation.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Fresh fruits</span>
+              <span class="chip">Viable seeds</span>
+              <span class="chip">Medicinal uses</span>
+            </div>
+            <div class="product-meta">
+              <div>
+                <div class="product-price">₹ — / kg</div>
+                <div class="product-unit">(Update with your price)</div>
+              </div>
+              <div class="product-unit">Packaging: 500g / 1kg</div>
+            </div>
+            <div class="product-cta">
+              <a href="#contact" class="btn btn-outline" style="padding: 0.45rem 0.9rem;">
+                Enquire for Availability
+              </a>
+              <span style="font-size: 0.75rem; color: var(--muted);">
+                Also available for planting and cultivation.
+              </span>
+            </div>
+          </article>
+
+          <!-- Fresh Coriander -->
+          <article class="product-card">
+            <div class="product-tag">Fresh Herbs</div>
+            <h3 class="product-name">Fresh Coriander</h3>
+            <p class="product-desc">
+              Hand-picked fresh coriander leaves with vibrant green color and
+              strong aroma. Perfect for garnishing, chutneys, and cooking.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Same-day harvest</span>
+              <span class="chip">Cleaned & bundled</span>
+              <span class="chip">High freshness</span>
+            </div>
+            <div class="product-meta">
+              <div>
+                <div class="product-price">₹ — / bunch</div>
+                <div class="product-unit">(Update with your price)</div>
+              </div>
+              <div class="product-unit">MOQ: Minimum 100kg (Wholesale)</div>
+            </div>
+            <div class="product-cta">
+              <a href="#contact" class="btn btn-outline" style="padding: 0.45rem 0.9rem;">
+                Enquire for Fresh Stock
+              </a>
+              <span style="font-size: 0.75rem; color: var(--muted);">
+                Ideal for restaurants and home use.
+              </span>
+            </div>
+          </article>
+
+          <!-- Fresh Mint -->
+          <article class="product-card">
+            <div class="product-tag">Fresh Herbs</div>
+            <h3 class="product-name">Fresh Mint</h3>
+            <p class="product-desc">
+              Premium fresh mint leaves, grown organically. Excellent for teas,
+              salads, desserts, and culinary preparations.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Organic growth</span>
+              <span class="chip">Strong flavor</span>
+              <span class="chip">Versatile use</span>
+            </div>
+            <div class="product-meta">
+              <div>
+                <div class="product-price">₹ — / bunch</div>
+                <div class="product-unit">(Update with your price)</div>
+              </div>
+              <div class="product-unit">Packaging: Bunches / 100kg</div>
+            </div>
+            <div class="product-cta">
+              <a href="#contact" class="btn btn-outline" style="padding: 0.45rem 0.9rem;">
+                Request Bulk Quote
+              </a>
+              <span style="font-size: 0.75rem; color: var(--muted);">
+                Great for beverages and cooking.
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Why KRC Curry Leaves</div>
+          <h2 class="section-title">Taste, Aroma & Health in Every Leaf</h2>
+          <p class="section-subtitle">
+            Curry leaves are not just for tempering – they support better
+            digestion, hair health and overall wellness. We handle each leaf
+            carefully to preserve its natural benefits.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h3 class="benefit-title">Nutrient-Rich</h3>
+            <p>
+              Curry leaves are naturally rich in iron, calcium and antioxidants
+              that support healthy hair, skin and metabolism when regularly
+              included in your diet.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h3 class="benefit-title">Clean & Hygienic Handling</h3>
+            <p>
+              From plucking to packing, KRC follows strict hygiene practices.
+              Leaves are sorted, cleaned and processed without any harmful
+              chemicals.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h3 class="benefit-title">Consistent Supply</h3>
+            <p>
+              We work with dedicated farms to ensure regular supply of raw,
+              dry and powdered curry leaves for retailers, hotels and masala
+              manufacturers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">About Us</div>
+          <h2 class="section-title">Who We Are</h2>
+          <p class="section-subtitle">
+            With over 40 years of experience in the field, KRC has been distributing fresh herbs and specialty products across India, serving regions like Kerala, Andhra Pradesh, Chennai, and more.
+          </p>
+        </div>
+        <div class="about-content">
+          <p>
+            Founded with a passion for quality and freshness, we have built a reputation for reliable supply and exceptional products. Our commitment to traditional farming practices ensures that every leaf and herb meets the highest standards of taste, aroma, and nutrition. We deliver across India at reasonable prices, ensuring timely and fresh delivery to all regions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Our Process</div>
+          <h2 class="section-title">From Leaf to Pack – The KRC Way</h2>
+          <p class="section-subtitle">
+            We follow a simple but strict process to keep our curry leaves
+            fresh, aromatic and safe for your family and your customers.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div>
+            <div class="steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                  <div class="step-title">Farm Selection</div>
+                  <p>
+                    We work with carefully chosen farms that avoid harmful
+                    chemicals and pesticides, giving you safer, better leaves.
+                  </p>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                  <div class="step-title">Hand Picking & Sorting</div>
+                  <p>
+                    Only healthy, green leaves are selected. Yellow, damaged
+                    or insect-affected leaves are removed during sorting.
+                  </p>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                  <div class="step-title">Natural Drying & Grinding</div>
+                  <p>
+                    For dry leaves and powder, we use shade-drying methods and
+                    controlled grinding to retain aroma and nutrition.
+                  </p>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="step-number">4</div>
+                <div>
+                  <div class="step-title">Packing & Dispatch</div>
+                  <p>
+                    Products are packed in food-grade materials and dispatched
+                    quickly to maintain freshness and quality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="process-card">
+            <h3 style="font-size: 1rem; margin-bottom: 0.4rem;">
+              Ideal For
+            </h3>
+            <ul class="process-list">
+              <li>Retail grocery shops & supermarkets</li>
+              <li>Hotels, restaurants & caterers</li>
+              <li>Spice & masala manufacturers</li>
+              <li>Health mix & herbal product brands</li>
+              <li>Exporters looking for reliable sourcing</li>
+            </ul>
+
+            <div class="contact-highlight">
+              Looking for regular bulk supply of raw or dry curry leaves?  
+              <br />Share your monthly requirement and packaging preference –
+              we will customise an offer for you.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Trusted By Customers</div>
+          <h2 class="section-title">What Our Buyers Say</h2>
+          <p class="section-subtitle">
+            Add real feedback from your customers here once you start
+            supplying. Below are sample testimonials you can replace anytime.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-quote">
+              "KRC has been our reliable supplier of fresh curry leaves for over a decade. Their quality and consistency are unmatched, ensuring our production lines run smoothly."
+            </p>
+            <div class="testimonial-name">Synthite Industries</div>
+            <!-- <div class="testimonial-role">Procurement Manager</div> -->
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-quote">
+              "The sun-dried curry leaves from KRC preserve the authentic aroma and greenery perfectly. Ideal for our international spice blends and health products."
+            </p>
+            <div class="testimonial-name">Mevive International</div>
+            <!-- <div class="testimonial-role">Supply Chain Director</div> -->
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-quote">
+              "Their fresh coriander and mint are of premium quality. We use them extensively in our restaurant preparations and highly recommend KRC for bulk supplies."
+            </p>
+            <div class="testimonial-name">Hotel Chain Partner</div>
+            <!-- <div class="testimonial-role">Chef & Procurement Head</div> -->
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section id="clients">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Our Clients</div>
+          <h2 class="section-title">Trusted Partners</h2>
+          <p class="section-subtitle">
+            We proudly serve leading companies across the industry.
+          </p>
+        </div>
+        <div class="clients-list">
+          <div>Synthite Industries</div>
+          <div>Mevive International</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow contact-eyebrow">Contact KRC</div>
+          <h2 class="section-title">Enquire for Prices & Supply</h2>
+          <p class="section-subtitle">
+            Fill in the enquiry form or contact us via phone / WhatsApp for
+            fresh, dry and powder curry leaf  and mint & coriander supply.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-form-card">
+            <!-- Note: Configure backend or use mailto with JS later -->
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="field-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="field-group">
+                <label for="phone">Phone / WhatsApp *</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="field-group">
+                <label for="type">You are a</label>
+                <select id="type" name="type">
+                  <option value="">Select option</option>
+                  <option>Retail Customer</option>
+                  <option>Grocery / Supermarket</option>
+                  <option>Hotel / Caterer</option>
+                  <option>Masala / Spice Manufacturer</option>
+                  <option>Other Business</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="product">Interested In</label>
+                <select id="product" name="product">
+                  <option value="">Select product</option>
+                  <option>Raw Fresh Curry Leaves</option>
+                  <option>Dry Curry Leaves</option>
+                  <option>Curry Leaf Powder</option>
+                  <option>Multiple Products</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="message">Message / Requirement *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="3"
+                  placeholder="Example: Need 50kg powder and 1000kg dry leaves per month in 1kg packing."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Enquiry
+              </button>
+              <p
+                id="formStatus"
+                style="font-size: 0.8rem; color: var(--muted); margin-top: 0.4rem;"
+              ></p>
+            </form>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-info-item">
+              <strong>Call / WhatsApp</strong>
+              <span>+91-8531973349</span>
+              <span style="font-size: 0.78rem;">
+                              </span>
+            </div>
+            <div class="contact-info-item">
+              <strong>Email</strong>
+              <span>banucmsc@gmail.com</span>
+            </div>
+            <div class="contact-info-item">
+              <strong>Karamadai</strong>
+              <span>
+                Karamadai, Coimbatore, Tamil Nadu, India
+              </span>
+            </div>
+            <div class="contact-info-item">
+              <strong>Contact Person</strong>
+              <span>Chandran R</span>
+              <span>9787135484, <a href="https://wa.me/919629012879" target="_blank" style="color: #25d366; text-decoration: none;">9629012879 💬</a></span>
+
+            </div>
+            <div class="contact-info-item">
+              <strong>Working Hours</strong>
+              <span>Monday – Saturday: 9:00 AM to 10:00 PM</span>
+            </div>
+
+            <div class="contact-highlight">
+              You can also share your order requirements directly on WhatsApp.
+              We will respond with the latest price list and availability.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        © <span id="year"></span> KRC Curry Leaves. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="#top">Back to top</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/918531973349" target="_blank">💬</a>
+  </div>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.getElementById("navLinks");
+    const navCta = document.getElementById("navCta");
+
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      navCta.classList.toggle("open");
+    });
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        const targetId = this.getAttribute("href");
+        if (targetId === "#" || targetId.length === 0) return;
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          window.scrollTo({
+            top: targetEl.offsetTop - 70,
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+
+    // Year in footer
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Simple form handler (opens mail app)
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const type = document.getElementById("type").value;
+      const product = document.getElementById("product").value;
+      const message = document.getElementById("message").value;
+
+      const mailTo = "banucmsc@gmail.com"; // change to your email
+      const subject = encodeURIComponent(
+        "New Enquiry - KRC Curry Leaves"
+      );
+      const body = encodeURIComponent(
+        `Name: ${name}\nPhone/WhatsApp: ${phone}\nType: ${
+          type || "Not specified"
+        }\nInterested In: ${product || "Not specified"}\n\nMessage:\n${message}`
+      );
+
+      window.location.href = `mailto:${mailTo}?subject=${subject}&body=${body}`;
+
+      const status = document.getElementById("formStatus");
+      status.textContent =
+        "Thank you! Your email client will open to send this enquiry.";
+
+      // Clear the form
+      form.reset();
+    }
+  </script>
+</body>
+</html>
